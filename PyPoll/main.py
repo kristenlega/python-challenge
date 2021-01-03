@@ -51,6 +51,7 @@ for candidate_name in election_results:
     print(f'{candidate_name}: {(election_results[candidate_name] / totalvotes):.3%} ({election_results[candidate_name]})')
 print("--------------------")
 print(f'Winner: {winner_name}')
+print("--------------------")
 
 
 # Create a new text file and print the results there
@@ -67,4 +68,5 @@ for candidate_name in election_results:
         f'{candidate_name}: {(election_results[candidate_name] / totalvotes):.3%} ({election_results[candidate_name]})' "\n")
 results.write(
 "--------------------" "\n"
-f'Winner: {winner_name}')
+f'Winner: {winner_name}' "\n"
+"--------------------")

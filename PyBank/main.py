@@ -66,11 +66,11 @@ avgchange = totalchange / (rowcount - 1)
 print("Financial Analysis")
 print("--------------------")
 print(f'Total Months: {monthcount}')
-print(f'Total: {total}')
+print(f'Total: ${total}')
 # Decimal precision format citation: https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points
-print(f'Average Change: {avgchange:.2f}')
-print(f'Greatest Increase in Profits: {increasemonth} {increase}')
-print(f'Greatest Decrease in Profits: {decreasemonth} {decrease}')
+print(f'Average Change: ${avgchange:.2f}')
+print(f'Greatest Increase in Profits: {increasemonth} (${increase})')
+print(f'Greatest Decrease in Profits: {decreasemonth} (${decrease})')
 
 
 # Create a new text file and print the results there
@@ -81,7 +81,8 @@ results.write(
     "Financial Analysis" "\n"
     "--------------------" "\n"
     f'Total Months: {monthcount}' "\n"
-    f'Total: {total}' "\n"
-    f'Average Change: {avgchange:.2f}' "\n"
-    f'Greatest Increase in Profits: {increasemonth} {increase}' "\n"
-    f'Greatest Decrease in Profits: {decreasemonth} {decrease}')
+    f'Total: ${total}' "\n"
+    f'Average Change: ${avgchange:.2f}' "\n"
+    f'Greatest Increase in Profits: {increasemonth} (${increase})' "\n"
+    f'Greatest Decrease in Profits: {decreasemonth} (${decrease})')
+    
